@@ -8,13 +8,14 @@
   height: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  z-index: -1;
 }
 
 /* ---- stats.js ---- */
 
 .count-particles{
   background: #000022;
-  position: absolute;
+  position: relative;
   top: 48px;
   left: 0;
   width: 80px;
@@ -26,6 +27,8 @@
   padding-bottom: 2px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
+  z-index: -1;
+
 }
 
 .js-count-particles{
