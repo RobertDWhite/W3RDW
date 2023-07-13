@@ -8,14 +8,13 @@
   height: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  z-index:
 }
 
 /* ---- stats.js ---- */
 
 .count-particles{
   background: #000022;
-  position: relative;
+  position: absolute;
   top: 48px;
   left: 0;
   width: 80px;
