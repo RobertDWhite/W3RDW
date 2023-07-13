@@ -23,11 +23,17 @@ languages:
         menu:
             main:
                 - name: WhiteMatterTech
-                  url: "https://whitematter.tech"
-                  weight: 10
-#                - name: Categories
-#                  url: categories/
-#                  weight: 10
+                  url: https://whitematter.tech
+                  weight: 5
+#                - name: Search
+#                  url: search/
+##                  weight: 10
+ #               - name: Tags
+ #                 url: tags/
+ #                 weight: 10
+ #               - name: Categories
+ #                 url: categories/
+ #                 weight: 10
 
 markup:
   goldmark:
@@ -67,7 +73,7 @@ params:
     logo:
       logoHomeLink: "/"
       logoMark: ">#"
-      logoText: "./w3rdw"
+      logoText: "./W3RDW"
       logoCursorDisabled: false
       logoCursorAnimate: "2s"
       logoCursorColor: "#67a2c9"
@@ -96,7 +102,7 @@ params:
           url: "index.xml"
 
     editPost:
-        URL: "https:///github.com/RobertDWhite/w3rdw.radio/edit/main/content"
+        URL: "https:///github.com/RobertDWhite/W3RDW/edit/main/content"
         Text: "Suggest Changes @ GitHub" # edit text
         appendFilePath: true # to append file path to Edit link
 
@@ -132,9 +138,9 @@ assets:
 
 
 taxonomies:
-    category: categories
-    tag: tags
-    series: series
+#    category: categories
+#    tag: tags
+#    series: series
 
     twitter:
         disabled: false
