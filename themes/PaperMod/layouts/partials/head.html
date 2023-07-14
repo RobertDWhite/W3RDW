@@ -153,7 +153,7 @@
 </noscript>
 
 {{- partial "extend_head.html" . -}}
-
+{{- partial "particles.html" . -}}
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
 {{- template "_internal/google_analytics.html" . }}
