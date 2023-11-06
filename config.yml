@@ -36,7 +36,7 @@ languages:
                   weight: 10
                 - name: WhiteMatterTech
                   url: https://whitematter.tech
-                  weight: 5
+                  weight: 15
 
 markup:
   goldmark:
