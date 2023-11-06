@@ -22,18 +22,21 @@ languages:
         weight: 1
         menu:
             main:
+                - name: Posts
+                  url: posts
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: Categories
+                  url: categories/
+                  weight: 10
                 - name: WhiteMatterTech
                   url: https://whitematter.tech
                   weight: 5
-#                - name: Search
-#                  url: search/
-##                  weight: 10
- #               - name: Tags
- #                 url: tags/
- #                 weight: 10
- #               - name: Categories
- #                 url: categories/
- #                 weight: 10
 
 markup:
   goldmark:
@@ -69,7 +72,7 @@ params:
     ShowCodeCopyButtons: true
     ShowToc: true
     comments: false
-#    images: ["brain.jpg"]
+    images: ["sounds.png"]
     logo:
       logoHomeLink: "/"
       logoMark: ">#"
@@ -98,7 +101,7 @@ params:
           url: "https://matrix.to/#/#whitematter:white.fm"
         - name: email
           url: "mailto:robert@whitematter.tech"
-        - name: RsS
+        - name: RSS
           url: "index.xml"
 
     editPost:
@@ -138,9 +141,9 @@ assets:
 
 
 taxonomies:
-#    category: categories
-#    tag: tags
-#    series: series
+    category: categories
+    tag: tags
+    series: series
 
     twitter:
         disabled: false
