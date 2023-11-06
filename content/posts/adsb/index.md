@@ -172,7 +172,7 @@ services:
 
 You should now have a `.env` file and a `docker-compose.yml` in your directory, and you're ready to start the services.
 
-### Step 4: Start the ADS-B Flight Tracker
+## Step 4: Start the ADS-B Flight Tracker
 
 To start the ADS-B flight tracker, navigate to the directory containing your `docker-compose.yml` file using Terminal. Run the following command:
 
@@ -182,7 +182,7 @@ docker-compose up -d
 
 This command will download the necessary Docker images and start the services specified in your `docker-compose.yml` file. The ADS-B flight tracker will begin receiving and processing data from aircraft in your area.
 
-### Step 5: Access the Web Interface
+## Step 5: Access the Web Interface
 
 Once the services are up and running, you can access the web interfaces:
 
