@@ -14,7 +14,7 @@ tags:
 cover:
     image: "/posts/adsb/adsb.png"
     alt: "ADSB"
-    caption: "ADSB Screenshot"
+    caption: "<text>"
     relative: true
 aliases:
     - /posts/adsb/adsb/
