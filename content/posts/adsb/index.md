@@ -31,6 +31,8 @@ My particular setup includes an ESXi host with a Ubuntu 21.04 VM. The USB dongle
 
 Before we begin, you'll need a RTL SDR USB dongle and a recommended ADS-B antenna. If you do not have a solution already, you could choose from either the RTL SDR Kit or Standalone below. The SMA extension cable was useful for me to run my antenna from my ESXi server up to my attic. And finally, the recommended ADS-B antenna below is well poised for our purposes:
 
+_As an Amazon Associate, I earn from qualifying purchases. **Thank you** for supporting the maintenance of this blog. The pricing will be the same for you regardless if you use my links or not! Thanks for your support!_
+
 - [RTL SDR (Kit)](https://amzn.to/3QjXSlU)
 - [RTL SDR USB Dongle (Standalone)](https://amzn.to/3Qi3OMg)
 - [Optional SMA Extension Cable](https://amzn.to/3QK0vyP)
