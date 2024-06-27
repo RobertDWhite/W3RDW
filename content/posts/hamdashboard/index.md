@@ -29,6 +29,8 @@ The first step is to fork the repository, made possible by [VA3HDL](https://gith
 2. Visit [VA3HDL/hamdashboard](https://github.com/VA3HDL/hamdashboard).
 3. Click the "Fork" button at the top-right corner of the page. This will create a copy of the repository under your GitHub account.
 
+![Fork on Github](fork.png)
+
 ## Step 2: Rename `hamdash.html` to `index.html`
 
 For Cloudflare Pages to recognize the main file to serve, we need to rename `hamdash.html` to `index.html`.
@@ -51,6 +53,8 @@ Next, we’ll deploy the repository to Cloudflare Pages. These steps assume you 
    - **Build command:** (Leave empty)
    - **Build output directory:** .
 
+![Deployment Options](deploymentoptions.png)
+
    Click "Save and Deploy".
 
 7. Cloudflare Pages will now deploy your site. This may take a few minutes.
@@ -62,6 +66,7 @@ Now that your site is live, let’s add a custom domain to it. These steps assum
 1. In the Cloudflare Pages dashboard, click on your newly created project.
 2. Click on the "Custom domains" tab.
 3. Click "Set up a custom domain" and enter your domain name.
+![Custom Domain](customdomain.png)
 4. Cloudflare will provide you with a CNAME record. Cloudflare should add this for you automatically if you are using CLoudflare to manage DNS records. If you are using another provider, you need to add this record to your domain’s DNS settings.
    - **Log in to your domain registrar:** Access the DNS settings for your domain.
    - **Add a CNAME Record:** Add the CNAME record provided by Cloudflare. The exact process will vary depending on your registrar, but generally, you’ll enter the CNAME in the format `yourdomain.com -> pages.dev`.
