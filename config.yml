@@ -146,8 +146,3 @@ taxonomies:
     category: categories
     tag: tags
     series: series
-
-    twitter:
-        disabled: false
-        enableDNT: true
-        simple: true
