@@ -23,11 +23,11 @@ aliases:
 
 # Setting Up an ADS‑B Flight Tracker with a Cheap Antenna on Kubernetes (RKE2 and ArgoCD)
 
-This is the Kubernetes version of my earlier Docker‑based ADS‑B guide. In this
-setup, everything is defined in YAML and deployed via ArgoCD, so changes are
+This is the Kubernetes version of [my earlier Docker‑based ADS‑B guide](https://w3rdw.radio/posts/adsb/). In this
+setup, everything is defined in YAML and deployed via ArgoCD, and changes are
 tracked in Git and synced automatically to the cluster. Access is handled
 through an NGINX Ingress with TLS from cert‑manager, which is how I publish
-the ADS‑B UI at adsb.w3rdw.radio. If you’re comfortable editing YAML and
+the ADS‑B UI at [adsb.w3rdw.radio](adsb.w3rdw.radio). If you’re comfortable editing YAML and
 committing to Git, you’ll feel right at home.
 
 This guide assumes a USB RTL‑SDR dongle is passed through to a Kubernetes node.
@@ -48,7 +48,7 @@ To follow along, you can grab [my RKE2 Github Project](https://github.com/Robert
 
 Hardware:
 
-- RTL‑SDR USB dongle
+- RTL‑SDR USB dongle (recommended below)
 - ADS-B antenna (recommended below)
 - Optional SMA extension cable
 
