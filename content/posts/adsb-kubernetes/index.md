@@ -5,26 +5,26 @@ categories:
   - "adsb"
   - "antenna"
   - "tutorials"
-  - "kubernetes
+  - "kubernetes"
 tags:
   - "adsb"
   - "antenna"
   - "kubernetes"
   - "tutorials"
 cover:
-    image: "/posts/adsb/adsb.png"
-    alt: "ADSB"
-    caption: "<text>"
-    relative: true
+  image: "/posts/adsb/adsb.png"
+  alt: "ADSB"
+  caption: "<text>"
+  relative: true
 aliases:
-    - /posts/adsb/adsb/
-    - /2026/adsb/
+  - /posts/adsb/adsb/
+  - /2026/adsb/
 ---
 
 # Setting Up an ADS‑B Flight Tracker with a Cheap Antenna on Kubernetes (RKE2
 + ArgoCD)
 
-TThis is the Kubernetes version of my earlier Docker‑based ADS‑B guide. In this
+This is the Kubernetes version of my earlier Docker‑based ADS‑B guide. In this
 setup, everything is defined in YAML and deployed via ArgoCD, so changes are
 tracked in Git and synced automatically to the cluster. Access is handled
 through an NGINX Ingress with TLS from cert‑manager, which is how I publish
@@ -145,8 +145,8 @@ Change that to the node with your USB dongle.
 This deployment also uses:
 
 ```
-- privileged: true
-- hostPath to /dev/bus/usb
+  - privileged: true
+  - hostPath to /dev/bus/usb
 ```
 
 That’s required for RTL‑SDR access.
