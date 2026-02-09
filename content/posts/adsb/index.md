@@ -1,6 +1,6 @@
 ---
 title: "ADSB"
-date: "2023-10-22"
+date: "2026-02-08"
 categories:
   - "adsb"
   - "antenna"
@@ -18,7 +18,7 @@ cover:
     relative: true
 aliases:
     - /posts/adsb/adsb/
-    - /2023/adsb/
+    - /2026/adsb/
 ---
 
 # Setting Up an ADS-B Flight Tracker with a Cheap Antenna and Docker on Ubuntu
