@@ -25,7 +25,7 @@ aliases:
 
 In this tutorial, I'll walk you through the process of setting up an ADS-B flight tracker using a cheap antenna and Docker on Ubuntu. ADS-B (Automatic Dependent Surveillance – Broadcast) is a surveillance technology that allows aircraft to determine their position via satellite navigation and periodically broadcast it. By setting up your own ADS-B receiver, you can track flights in your area and contribute to the global flight tracking network.
 
-My particular setup includes an ESXi host with a Ubuntu 21.04 VM. The USB dongle I'll recommend is passed through to the VM. While a solid understandint of Docker is not fully required, it will be benefical for troubleshooting possible USB issues and customizing your configs. If you need help installing Docker, I recommend [this tutorial to install Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04) and [this tutorial to install Docker Compose](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04). 
+My particular setup includes an ESXi host with a Ubuntu 21.04 VM. The USB dongle I'll recommend is passed through to the VM. While a solid understanding of Docker is not fully required, it will be benefical for troubleshooting possible USB issues and customizing your configs. If you need help installing Docker, I recommend [this tutorial to install Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04) and [this tutorial to install Docker Compose](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04). 
 
 ## Prerequisites
 
