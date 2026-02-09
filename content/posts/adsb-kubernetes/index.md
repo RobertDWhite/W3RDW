@@ -21,8 +21,7 @@ aliases:
   - /2026/adsb/
 ---
 
-# Setting Up an ADS‑B Flight Tracker with a Cheap Antenna on Kubernetes (RKE2
-+ ArgoCD)
+# Setting Up an ADS‑B Flight Tracker with a Cheap Antenna on Kubernetes (RKE2 and ArgoCD)
 
 This is the Kubernetes version of my earlier Docker‑based ADS‑B guide. In this
 setup, everything is defined in YAML and deployed via ArgoCD, so changes are
