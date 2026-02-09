@@ -17,7 +17,7 @@ cover:
   caption: "<text>"
   relative: true
 aliases:
-  - /posts/adsb/adsb/
+  - /posts/adsb-kubernetes/adsb/
   - /2026/adsb/
 ---
 
