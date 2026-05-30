@@ -37,6 +37,10 @@ languages:
                 - name: WhiteMatterTech
                   url: https://whitematter.tech
                   weight: 15
+                - name: Onion
+                  title: "How to read this site over Tor"
+                  url: onion/
+                  weight: 16
 
 markup:
   goldmark:
