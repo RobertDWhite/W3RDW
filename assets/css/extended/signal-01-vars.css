@@ -1,0 +1,86 @@
+/* ============================================================================
+   SIGNAL / HF — theme layer for W3RDW
+   ----------------------------------------------------------------------------
+   Sibling of the Signal theme on whitematter.tech: same structure, same
+   monospace telemetry, same node-and-link vocabulary. Different band.
+
+   whitematter.tech is teal on near-black — neurons, white matter, connectivity.
+   W3RDW is RF blue and violet on deep navy, with an amber horizon — propagation,
+   spectrum, the glow of a distant town from a hilltop at night. The two read as
+   the same hand without reading as the same site, which is the point: the home
+   page here already draws the analogy between radio contacts and neural
+   pathways, so the palettes should rhyme rather than repeat.
+
+   Colours are sampled from the backdrop plate (static/images/w3rdw-backdrop.png):
+   the propagation rings, the waterfall trace, and the town lights on the horizon.
+
+   Layered on top of PaperMod via assets/css/extended/*.css. The vendored theme
+   in themes/PaperMod is not modified, so this reverts by deleting the
+   signal-*.css files and the two partial overrides.
+   ========================================================================== */
+
+:root {
+    /* --- surfaces: deep navy rather than neutral black ------------------ */
+    --wm-void: #050a14;
+    --wm-deep: #08101f;
+    --wm-panel: #0b1524;
+    --wm-panel-hi: #101d30;
+    --wm-line: #1b2b42;
+    --wm-line-hi: #274058;
+
+    /* --- ink ------------------------------------------------------------ */
+    --wm-text: #c2d2e6;
+    --wm-head: #e9f1fa;
+    --wm-dim: #7d92ad;
+    --wm-faint: #4e6480;
+
+    /* --- signal --------------------------------------------------------- */
+    --wm-signal: #4db8ff;   /* propagation rings — primary                  */
+    --wm-signal-2: #8b7bff; /* waterfall trace — secondary                  */
+    --wm-warn: #ffa63d;     /* horizon glow — "on air", active, warm accent */
+    --wm-crit: #ff5c78;
+
+    /* derived — do not hand-edit */
+    --wm-signal-dim: color-mix(in srgb, var(--wm-signal) 55%, transparent);
+    --wm-signal-ghost: color-mix(in srgb, var(--wm-signal) 14%, transparent);
+    --wm-signal-haze: color-mix(in srgb, var(--wm-signal) 7%, transparent);
+
+    /* --- type ----------------------------------------------------------- */
+    /* No webfont on purpose: this site has an .onion mirror too, and it
+       should render without a third-party font request. */
+    --wm-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+               "Liberation Mono", monospace;
+
+    /* --- geometry ------------------------------------------------------- */
+    --radius: 4px;
+    --wm-tick: 7px;
+}
+
+/* This fork of PaperMod predates the one on whitematter.tech: it uses
+   --hljs-bg where the newer theme uses --code-block-bg, and has no
+   css/includes bundle. Both names are set so the layer is portable. */
+:root,
+.dark {
+    --theme: var(--wm-void);
+    --entry: var(--wm-panel);
+    --primary: var(--wm-head);
+    --secondary: var(--wm-dim);
+    --tertiary: var(--wm-line);
+    --content: var(--wm-text);
+    --hljs-bg: #060d18;
+    --code-block-bg: #060d18;
+    --code-bg: #0f1c2e;
+    --border: var(--wm-line);
+}
+
+/* The base colour lives on <html>, not <body>. The backdrop layers sit between
+   the two, and a painted <body> background would cover them on list pages. */
+html {
+    background-color: var(--wm-void);
+}
+
+body,
+.dark.list,
+.list {
+    background: transparent;
+}
