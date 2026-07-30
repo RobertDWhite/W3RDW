@@ -76,7 +76,7 @@ params:
     ShowCodeCopyButtons: true
     ShowToc: true
     comments: false
-    images: ["sounds.png"]
+    images: ["images/w3rdw-blog-thumbnail-v2.png"]
     logo:
       logoHomeLink: "/"
       logoMark: ">#"
