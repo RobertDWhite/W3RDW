@@ -15,7 +15,7 @@ tags:
   - "ham"
   - "radio"
 cover:
-  image: "/posts/openhamclock/openhamclock.png"
+  image: "openhamclock.png"
   alt: "openhamclock"
   caption: "<text>"
   relative: true
