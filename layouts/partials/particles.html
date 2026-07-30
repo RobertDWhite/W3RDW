@@ -1,0 +1,27 @@
+{{- /* SIGNAL / HF backdrop stack. Overrides the theme partial of the same name.
+
+       The theme's version wrapped #particles-js in a .site-wrapper div and
+       positioned it absolutely at height:100%, which resolves against the
+       initial containing block — so the field only ever covered the first
+       viewport and every page went flat below the fold. It is fixed now
+       (see signal-02-shell.css).
+
+       Order matters — these are all z-index:0 and stack by document order:
+       plate (the RF scene) → grid (structure) → particles (contacts) →
+       veil (grade) → scan (sweep). */ -}}
+<div class="wm-plate" aria-hidden="true"></div>
+<div class="wm-grid" aria-hidden="true"></div>
+<div id="particles-js"></div>
+<div class="wm-veil" aria-hidden="true"></div>
+<div class="wm-scan" aria-hidden="true"></div>
+
+{{- /* Station rail. Same shape as the telemetry rail on whitematter.tech, in
+       this site's own register. Every claim is true: the callsign and licence
+       class are on record with the FCC, the onion mirror is advertised via
+       Onion-Location, and the feed is live. */ -}}
+<div class="wm-rail" aria-hidden="true">
+  <span>callsign: w3rdw</span>
+  <span>licence: technician</span>
+  <span>onion: advertised</span>
+  <span>feed: live</span>
+</div>

@@ -132,8 +132,15 @@
 </script>
 
 {{- end }}
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script src="js/particles.min.js"></script>
-<script src="js/particles.js"></script>
+{{- /* Same relative-path problem as the particle scripts below: these 404'd
+       on every page except the site root, so index.js threw "jQuery is not
+       defined" off-root. */ -}}
+<script src="{{ "js/jquery.js" | relURL }}"></script>
+<script src="{{ "js/jquery.fitvids.js" | relURL }}"></script>
+<script src="{{ "js/index.js" | relURL }}"></script>
+{{- /* Root-absolute (relURL) rather than relative: as "js/particles.min.js"
+       these resolved against the current path, so they 404'd on every page
+       except the site root and the backdrop only ever appeared on the home
+       page. Deferred so they no longer block parsing. */ -}}
+<script src="{{ "js/particles.min.js" | relURL }}" defer></script>
+<script src="{{ "js/particles.js" | relURL }}" defer></script>
